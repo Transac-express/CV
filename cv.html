@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV Thibaut Alzieu - Alternant CGP</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary: #0f172a;
+            --secondary: #b59055;
+            --text-main: #334155;
+            --bg-light: #f8fafc;
+            --white: #ffffff;
+        }
+        body {
+            font-family: 'Inter', system-ui, -apple-system, sans-serif;
+            background-color: #e2e8f0;
+            color: var(--text-main);
+            line-height: 1.5;
+            margin: 0;
+            padding: 40px 20px;
+        }
+        .cv-container {
+            max-width: 850px;
+            margin: 0 auto;
+            background: var(--white);
+            box-shadow: 0 20px 25px -5px rgba(0,0,0,0.1);
+            display: grid;
+            grid-template-columns: 280px 1fr;
+            min-height: 1100px;
+        }
+        /* Sidebar */
+        aside {
+            background-color: var(--primary);
+            color: var(--white);
+            padding: 40px 25px;
+        }
+        .profile-img {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            border: 3px solid var(--secondary);
+            margin-bottom: 20px;
+            object-fit: cover;
+        }
+        h1 { font-size: 24px; margin: 0; font-weight: 700; text-transform: uppercase; letter-spacing: 1px; }
+        .subtitle { color: var(--secondary); font-size: 13px; font-weight: 600; margin-top: 5px; text-transform: uppercase; }
+        
+        .sidebar-section { margin-top: 35px; }
+        .sidebar-h3 { 
+            font-size: 14px; 
+            text-transform: uppercase; 
+            border-bottom: 1px solid var(--secondary); 
+            padding-bottom: 5px; 
+            margin-bottom: 15px; 
+            color: var(--secondary);
+        }
+        .contact-item { font-size: 12px; margin-bottom: 10px; display: flex; flex-direction: column; }
+        .contact-item span { color: #94a3b8; font-size: 10px; text-transform: uppercase; }
+
+        /* Main Content */
+        main { padding: 40px; background: var(--white); }
+        .pitch { 
+            background: var(--bg-light); 
+            border-left: 4px solid var(--secondary); 
+            padding: 15px 20px; 
+            font-style: italic; 
+            font-size: 14px; 
+            margin-bottom: 30px;
+        }
+        .section-title { 
+            font-size: 16px; 
+            font-weight: 700; 
+            color: var(--primary); 
+            text-transform: uppercase; 
+            display: flex; 
+            align-items: center; 
+            margin-bottom: 20px;
+        }
+        .section-title::after { content: ""; flex: 1; height: 1px; background: #cbd5e1; margin-left: 15px; }
+        
+        .experience { margin-bottom: 25px; }
+        .exp-header { display: flex; justify-content: space-between; align-items: flex-start; }
+        .exp-title { font-weight: 700; color: var(--primary); font-size: 15px; }
+        .exp-company { color: var(--secondary); font-weight: 600; font-size: 13px; }
+        .exp-date { font-size: 11px; color: #64748b; font-weight: 600; }
+        
+        ul { padding-left: 18px; margin-top: 8px; }
+        li { font-size: 13px; margin-bottom: 5px; }
+        li strong { color: var(--primary); }
+
+        .skills-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
+        .skill-tag { background: #f1f5f9; padding: 5px 10px; border-radius: 4px; font-size: 11px; font-weight: 600; color: var(--primary); }
+
+        @media print {
+            body { padding: 0; background: none; }
+            .cv-container { box-shadow: none; width: 100%; }
+        }
+    </style>
+</head>
+<body>
+
+<div class="cv-container">
+    <aside>
+        <img src="https://via.placeholder.com/150" alt="Thibaut Alzieu" class="profile-img">
+        <h1>Thibaut<br>Alzieu</h1>
+        <div class="subtitle">Conseil en Gestion de Patrimoine<br>(Alternance)</div>
+
+        <div class="sidebar-section">
+            <div class="sidebar-h3">Contact</div>
+            <div class="contact-item"><span>Mobile</span>06 51 45 36 87</div>
+            <div class="contact-item"><span>Email</span>alzieu.thibaut@gmail.com</div>
+            <div class="contact-item"><span>Localisation</span>Bordeaux (33200)</div>
+        </div>
+
+        <div class="sidebar-section">
+            <div class="sidebar-h3">Expertises</div>
+            <div class="contact-item">Analyse Fiscale & Patrimoniale</div>
+            <div class="contact-item">Prospection & Qualification Client</div>
+            <div class="contact-item">Ingénierie Foncière (PLU/SCoT)</div>
+            <div class="contact-item">IA & Automatisation CRM</div>
+            <div class="contact-item">Réglementation AMF / CIF</div>
+        </div>
+
+        <div class="sidebar-section">
+            <div class="sidebar-h3">Certifications</div>
+            <div class="contact-item"><strong>Certification AMF</strong><br>En cours (Examen 2026)</div>
+            <div class="contact-item"><strong>Statut CIF</strong><br>En cours d'homologation</div>
+        </div>
+
+        <div class="sidebar-section">
+            <div class="sidebar-h3">Langues</div>
+            <div class="contact-item">Français (Natif)</div>
+            <div class="contact-item">Anglais (B2 - Professionnel)</div>
+        </div>
+    </aside>
+
+    <main>
+        <div class="pitch">
+            "Futur diplômé en Gestion de Patrimoine, je combine une expertise technique en prospection foncière et une maîtrise des outils digitaux (IA appliquée) pour optimiser les stratégies d'investissement. Orienté résultats, j'accompagne la clientèle haut de gamme dans la structuration de leurs actifs immobiliers et financiers."
+        </div>
+
+        <section>
+            <div class="section-title">Expérience Majeure</div>
+            <div class="experience">
+                <div class="exp-header">
+                    <div class="exp-title">Chargé de Projet Fonciers & Ingénierie IA</div>
+                    <div class="exp-date">2026 (Stagiaire)</div>
+                </div>
+                <div class="exp-company">Société de Marchand de Biens — Pauillac</div>
+                <ul>
+                    <li><strong>Prospection STAR :</strong> Développement d'un pipeline de 30+ propriétaires qualifiés, aboutissant à l'identification d'une opération foncière majeure (opportunité transmise au comité d'associés).</li>
+                    <li><strong>Analyse Technique :</strong> Audit de faisabilité sur 15+ parcelles via l'analyse rigoureuse des PLU, SCoT et servitudes d'urbanisme.</li>
+                    <li><strong>Innovation Fiscale :</strong> Conception d'un outil d'aide à la décision IA dédié au dispositif <strong>Denormandie</strong>, permettant de simuler l'optimisation fiscale pour les prospects.</li>
+                    <li><strong>Veille Distressed Assets :</strong> Automatisation de la surveillance Bodacc/Data.gouv pour la détection d'actifs sous-évalués en Gironde.</li>
+                </ul>
+            </div>
+        </section>
+
+        <section>
+            <div class="section-title">Expériences Client & Rigueur</div>
+            <div class="experience">
+                <div class="exp-header">
+                    <div class="exp-title">Parcours Opérationnel Multi-Secteurs</div>
+                    <div class="exp-date">2022 — 2025</div>
+                </div>
+                <div class="exp-company">Pharmacie, Distribution, Épicerie Solidaire — Bordeaux</div>
+                <ul>
+                    <li><strong>Sécurité Financière :</strong> Gestion quotidienne de flux de caisse et opérations bancaires avec un taux d'erreur nul.</li>
+                    <li><strong>Conseil Réglementé :</strong> (Pharmacie) Accueil et orientation client dans un cadre strict de confidentialité et de déontologie, compétences directement transposables au secret professionnel patrimonial.</li>
+                </ul>
+            </div>
+
+            <div class="experience">
+                <div class="exp-header">
+                    <div class="exp-title">Responsable Partenariats & Événements</div>
+                    <div class="exp-date">2024 — 2026</div>
+                </div>
+                <div class="exp-company">BDE ESG Bordeaux</div>
+                <ul>
+                    <li><strong>Négociation :</strong> Prospection et signature de contrats de sponsoring avec des acteurs locaux pour le financement d'événements (budget géré : plusieurs milliers d'euros).</li>
+                </ul>
+            </div>
+        </section>
+
+        <section>
+            <div class="section-title">Formation</div>
+            <div class="experience">
+                <div class="exp-header">
+                    <div class="exp-title">Bachelor Commerce & Gestion (Spé. Patrimoine)</div>
+                    <div class="exp-date">2024 — 2026</div>
+                </div>
+                <div class="exp-company">ESG Bordeaux</div>
+                <div style="font-size: 13px; color: var(--text-main); margin-top: 5px;">Focus : Fiscalité immobilière, Droit de la famille, Marchés financiers, Assurance-Vie.</div>
+            </div>
+        </section>
+
+        <section>
+            <div class="section-title">Atouts Professionnels</div>
+            <div class="skills-grid">
+                <div class="skill-tag">Analyse fiscale (Denormandie/LMNP)</div>
+                <div class="skill-tag">CRM & Pipeline Management</div>
+                <div class="skill-tag">Prompt Engineering (IA)</div>
+                <div class="skill-tag">Rigueur analytique & Discrétion</div>
+                <div class="skill-tag">Expertise PLU / Urbanisme</div>
+                <div class="skill-tag">Macro-économie (Lecture Ray Dalio)</div>
+            </div>
+        </section>
+    </main>
+</div>
+
+</body>
+</html>
